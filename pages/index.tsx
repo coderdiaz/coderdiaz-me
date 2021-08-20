@@ -1,10 +1,9 @@
 import Image from "next/image";
-import { PaperAirplaneIcon, ArrowSmRightIcon } from "@heroicons/react/outline";
+import { Twitter, Send, ArrowUpRight } from "react-feather";
 import { RoughNotation } from "react-rough-notation";
 
 import Container from "@/components/Container";
 import BaseLayout from "@/layouts/BaseLayout";
-import TwitterIcon from "@/components/Twitter";
 import Avatar from "@/images/coderdiaz.png";
 import Thumbnail from "@/images/thumbnail-video.png";
 import ThumbnailWork from "@/images/thumbnail-work.png";
@@ -32,11 +31,11 @@ export default function IndexPage() {
           </div>
           <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
             <a href="#" className="py-5 px-6 flex items-center space-x-3 font-semibold md:text-lg text-white bg-rose-600 hover:bg-rose-500 rounded-lg">
-              <PaperAirplaneIcon className="w-5 h-5" />
+              <Send className="w-5 h-5" />
               <span>Get in touch</span>
             </a>
             <a href="#" className="py-5 px-6 flex items-center space-x-3 font-semibold md:text-lg text-gray-900 bg-gray-100 hover:bg-gray-200 md:bg-transparent md:hover:bg-gray-100 rounded-lg">
-              <TwitterIcon className="w-5 h-5" />
+              <Twitter className="w-5 h-5" />
               <span>Follow me</span>
             </a>
           </div>
@@ -84,7 +83,7 @@ export default function IndexPage() {
             <h2 className="text-2xl md:text-3xl font-bold">Latest Posts</h2>
             <p className="md:text-lg leading-relaxed text-gray-500">Thoughts on what I'm building and learning.</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-5">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="flex flex-col space-y-4">
               <div className="relative h-48 lg:h-64">
                 <Image
@@ -98,7 +97,7 @@ export default function IndexPage() {
                 <p className="leading-relaxed text-gray-700 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi esse libero officia temporibus, enim saepe aspernatur.</p>
               </div>
             </div>
-            <div className="flex flex-col space-y-7 border-t md:border-t-0 md:border-l border-gray-200 pt-5 md:pt-0 md:pl-5">
+            <div className="flex flex-col space-y-7 border-t md:border-t-0 md:border-l border-gray-200 pt-5 md:pt-0 md:pl-8">
               <div className="flex flex-col space-y-1">
                 <h3 className="font-bold md:text-lg lg:text-xl">Verifying Your Shopify Webhooks in Next.js APIs</h3>
                 <p className="leading-relaxed text-gray-700 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi esse libero officia temporibus...</p>
@@ -136,7 +135,7 @@ export default function IndexPage() {
                 <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
                   <a href="#" className="py-5 px-6 flex justify-center md:justify-start items-center space-x-3 font-semibold md:text-lg text-white bg-rose-600 hover:bg-rose-500 rounded-lg">
                     <span>Show case study</span>
-                    <ArrowSmRightIcon className="w-6 h-6" />
+                    <ArrowUpRight className="w-6 h-6" />
                   </a>
                   <a href="#" className="py-5 px-6 flex justify-center md:justify-start items-center space-x-3 font-semibold md:text-lg text-gray-900 bg-white md:bg-transparent hover:bg-white rounded-lg">
                     <span>Go to Live</span>

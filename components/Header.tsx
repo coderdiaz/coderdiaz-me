@@ -1,9 +1,9 @@
-import { MoonIcon } from "@heroicons/react/outline";
+import { Moon } from "react-feather";
+import { GitHub } from "react-feather";
+import { Twitter } from "react-feather";
 
 import Container from "@/components/Container";
 import Isotype from "@/components/Isotype";
-import GitHub from "@/components/GitHub";
-import Twitter from "@/components/Twitter";
 
 export default function Header() {
   return (
@@ -16,7 +16,7 @@ export default function Header() {
               <ul className="flex items-center space-x-6">
                 <li>
                   <a href="#">
-                    <GitHub className="w-6 h-6" />
+                    <GitHub className="w-5 h-5" />
                   </a>
                 </li>
                 <li>
@@ -39,7 +39,7 @@ export default function Header() {
               </ul>
             </nav>
             <a href="#">
-              <MoonIcon className="w-6 h-6" />
+              <Moon className="w-5 h-5" />
             </a>
           </div>
         </div>
