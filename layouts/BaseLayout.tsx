@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 type LayoutProps = {
@@ -9,6 +10,7 @@ export default function BaseLayout({ children }: LayoutProps) {
     <>
       <Header />
       <main className="relative">{children}</main>
+      <Footer />
     </>
   );
 }
