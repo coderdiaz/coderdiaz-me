@@ -31,7 +31,7 @@ export default function Header() {
                   <a href="#">About</a>
                 </li>
                 <li>
-                  <a href="#">Blog</a>
+                  <a href="#">Writing</a>
                 </li>
                 <li>
                   <a href="#">Work</a>

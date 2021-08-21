@@ -4,7 +4,7 @@ import Isotype from "@/components/Isotype";
 
 export default function Footer() {
   return (
-    <footer className="py-6 md:py-8">
+    <footer className="py-6 md:pt-14 md:pb-8">
       <Container className="max-w-screen-lg">
         <div className="flex flex-col space-y-6 py-4">
           <div className="flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start space-y-6 md:space-y-0">
