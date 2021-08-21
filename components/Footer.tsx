@@ -1,6 +1,6 @@
 import { Headphones, GitHub, Twitter } from "react-feather";
-import Flag from "@/components/Flag";
 
+import Flag from "@/components/Flag";
 import Container from "@/components/Container";
 import Isotype from "@/components/Isotype";
 
@@ -10,7 +10,7 @@ export default function Footer() {
       <Container className="max-w-screen-lg">
         <div className="flex flex-col space-y-6 py-4">
           <div className="flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start space-y-6 md:space-y-0">
-            <div className="flex space-x-3">
+            <div className="flex items-center space-x-3">
               <Headphones className="w-5 h-5 text-green-600" />
               <span className="inline-block text-gray-600 text-sm xl:text-base">Nothing playing right now</span>
             </div>
