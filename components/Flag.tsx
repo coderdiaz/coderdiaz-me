@@ -1,146 +1,86 @@
 type Props = {
-  width: number;
-  height: number;
+  className?: string;
 }
-export default function Flag({ width, height }: Props) {
+
+export default function Flag({ className }: Props) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={width}
-      height={height}
-      fill="none"
-      viewBox="0 0 22 14"
-    >
-      <g filter="url(#filter0_d)">
-        <mask
-          id="mask0"
-          width="16"
-          height="12"
-          x="3"
-          y="1"
-          maskUnits="userSpaceOnUse"
-        >
-          <path fill="#fff" d="M3 1H19V13H3z"></path>
-        </mask>
-        <g mask="url(#mask0)">
-          <path
-            fill="#D9071E"
-            fillRule="evenodd"
-            d="M14 1h5v12h-5V1z"
-            clipRule="evenodd"
-          ></path>
-          <path
-            fill="#006923"
-            fillRule="evenodd"
-            d="M3 1h6v12H3V1z"
-            clipRule="evenodd"
-          ></path>
-          <path
-            fill="#fff"
-            fillRule="evenodd"
-            d="M8 1h6v12H8V1z"
-            clipRule="evenodd"
-          ></path>
-          <path
-            fill="#FCCA3D"
-            fillRule="evenodd"
-            d="M10.192 4.957s-.343.266-.279.55c.064.284.74 0 .66-.275-.083-.275-.38-.275-.38-.275z"
-            clipRule="evenodd"
-          ></path>
-          <path
-            fill="#A8AC71"
-            fillRule="evenodd"
-            d="M9.668 5.634c-.257 0-.364-.214-.311-.442.028-.121.102-.276.222-.476l.429.257a2.847 2.847 0 00-.11.198.96.96 0 01.25.113c.234.154.32.428.07.631-.048.04-.127.173-.17.302.119.007.204.025.283.071.221.13.2.37.032.553-.12.13-.279.237-.429.29-.25.091-.516.057-.516-.263v-.002c0-.013-.002-.036.11-.038h.021-.021c-.19-.003-.231-.104-.255-.283a1.852 1.852 0 01-.012-.182l-.002-.06-.003-.06V6.23c-.004-.058-.007-.097.123-.097h-.29v-.5h.29c.164 0 .255.055.307.17.03-.052.06-.101.094-.145a.386.386 0 00-.112-.024zm.318.878l.008-.008-.003.004-.005.004zm-.218.149s-.001 0 0 0zm0-.189v.008-.015.007z"
-            clipRule="evenodd"
-          ></path>
-          <path
-            fill="#8F4620"
-            fillRule="evenodd"
-            d="M12.633 7.201s.463-1.37-.272-2.08c-.736-.71-1.585-.662-1.585-.662s-.245.182 0 .32c.245.14.142.272.142.272s-.41-.416-.682-.173c-.272.243.254.206.198.39-.055.182-.291.995.054 1.405.344.41-.326.321-.19.321s.62.096.62 0c0-.095.168.371.312.371s.255-.164.255-.164.201.164.324.164.552-.107.552-.107l-.81-.682s.049-.301-.066-.366.92.577 1.002.784c.08.207.146.207.146.207z"
-            clipRule="evenodd"
-          ></path>
-          <path
-            fill="#9FAB2F"
-            d="M8.533 6.863s.075-.239.156-.256c.07-.014.216.115.216.115.26 1.445.889 2.01 1.933 2.01 1.055 0 1.695-.43 2.069-1.762 0 0 .198-.203.268-.18.077.024.172.292.172.292-.095 1.559-1.22 2.482-2.492 2.482-1.284 0-2.333-1.035-2.322-2.7z"
-          ></path>
-          <path
-            fill="#2FC2DC"
-            fillRule="evenodd"
-            d="M9.667 7.828s1.502.319 2.095.319c.593 0-.52.484-.954.484-.435 0-1.14-.803-1.14-.803z"
-            clipRule="evenodd"
-          ></path>
-          <rect
-            width="1"
-            height="0.536"
-            x="10.334"
-            y="8.05"
-            fill="#F9AA51"
-            rx="0.083"
-          ></rect>
-          <path
-            fill="#259485"
-            d="M9.088 7.068l.41-.287c.532.76 1.329 1.009 2.443.748l.114.487c-1.303.305-2.31-.01-2.967-.948z"
-          ></path>
-          <path
-            fill="#FCCA3D"
-            fillRule="evenodd"
-            d="M11.296 7.175s-.607.32-.405.32c.202 0 .994.16.84 0a2.35 2.35 0 00-.435-.32zM10.578 6.794s-.115-.333-.355-.333-.172.273-.288.273c-.115 0 .108.193.207.193.1 0 .436-.133.436-.133z"
-            clipRule="evenodd"
-          ></path>
-        </g>
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" width="20" height="15" fill="none">
+      <mask
+        id="a"
+        width="20"
+        height="15"
+        x="0"
+        y="0"
+        maskUnits="userSpaceOnUse"
+      >
+        <path fill="#fff" d="M0 0h20v15H0z"></path>
+      </mask>
+      <g mask="url(#a)">
         <path
-          fill="url(#paint0_linear)"
-          style={{ mixBlendMode: "overlay" }}
-          d="M3 1H19V13H3z"
+          fill="#D9071E"
+          fillRule="evenodd"
+          d="M14 0h6v15h-6V0z"
+          clipRule="evenodd"
         ></path>
         <path
-          fill="#000"
-          fillOpacity="0.1"
-          d="M4 2h14V0H4v2zm14 0v10h2V2h-2zm0 10H4v2h14v-2zM4 12V2H2v10h2zm0 0H2a2 2 0 002 2v-2zm14 0v2a2 2 0 002-2h-2zm0-10h2a2 2 0 00-2-2v2zM4 0a2 2 0 00-2 2h2V0z"
-          style={{ mixBlendMode: "multiply" }}
+          fill="#006923"
+          fillRule="evenodd"
+          d="M0 0h6v15H0V0z"
+          clipRule="evenodd"
+        ></path>
+        <path
+          fill="#fff"
+          fillRule="evenodd"
+          d="M6 0h8v15H6V0z"
+          clipRule="evenodd"
+        ></path>
+        <path
+          fill="#FCCA3D"
+          fillRule="evenodd"
+          d="M8.99 4.946s-.43.333-.349.688c.08.355.926 0 .824-.344-.102-.344-.475-.344-.475-.344z"
+          clipRule="evenodd"
+        ></path>
+        <path
+          fill="#A8AC71"
+          fillRule="evenodd"
+          d="M8.335 5.793c-.322 0-.455-.268-.389-.553.035-.152.128-.344.278-.595l.536.322a3.585 3.585 0 00-.137.247 1.2 1.2 0 01.313.141c.292.193.4.535.087.789-.061.049-.16.216-.213.377a.74.74 0 01.354.09c.276.162.25.46.04.69-.15.164-.348.296-.536.364-.312.113-.646.07-.646-.33v-.003c0-.016-.002-.044.138-.047m.006 0H8.16c-.238-.004-.289-.13-.319-.354a2.316 2.316 0 01-.014-.227l-.003-.076-.003-.074-.001-.016c-.005-.072-.008-.122.153-.122h-.362V5.79h.362c.206 0 .32.07.385.213.036-.065.075-.127.117-.182a.482.482 0 00-.14-.03m-.17 1.493h.022-.021zm.568-.395l.01-.01a.024.024 0 00-.004.004l-.006.006zm-.274.186zm0-.236l.002.01a.5.5 0 01-.002-.019v.01z"
+          clipRule="evenodd"
+        ></path>
+        <path
+          fill="#8F4620"
+          fillRule="evenodd"
+          d="M12.041 7.752s.579-1.714-.34-2.6c-.92-.887-1.981-.828-1.981-.828s-.306.227 0 .4c.306.174.177.34.177.34s-.512-.52-.852-.216c-.34.304.318.257.248.486-.07.229-.364 1.245.066 1.757.431.513-.407.402-.236.402.17 0 .774.12.774 0s.21.464.39.464c.18 0 .319-.205.319-.205s.252.205.406.205c.153 0 .689-.134.689-.134l-1.013-.853s.061-.376-.082-.458c-.144-.081 1.151.722 1.252.98.102.26.183.26.183.26z"
+          clipRule="evenodd"
+        ></path>
+        <path
+          fill="#9FAB2F"
+          d="M6.917 7.33s.093-.3.194-.32c.087-.019.27.143.27.143.325 1.806 1.111 2.511 2.416 2.511 1.32 0 2.12-.536 2.586-2.202 0 0 .249-.253.336-.225.096.03.215.366.215.366-.535 1.911-1.547 2.762-3.137 2.762-1.605 0-2.507-.962-2.88-3.036z"
+        ></path>
+        <path
+          fill="#2FC2DC"
+          fillRule="evenodd"
+          d="M8.334 8.535s1.878.399 2.619.399c.74 0-.65.604-1.193.604S8.334 8.535 8.334 8.535z"
+          clipRule="evenodd"
+        ></path>
+        <rect
+          width="1.25"
+          height="0.67"
+          x="9.167"
+          y="8.813"
+          fill="#F9AA51"
+          rx="0.104"
+        ></rect>
+        <path
+          fill="#259485"
+          d="M7.61 7.585l.511-.359c.666.95 1.662 1.261 3.055.935l.142.609c-1.628.381-2.886-.014-3.708-1.185z"
+        ></path>
+        <path
+          fill="#FCCA3D"
+          fillRule="evenodd"
+          d="M10.37 7.719s-.759.4-.506.4 1.242.199 1.05 0c-.193-.2-.544-.4-.544-.4zm-.897-.476s-.144-.417-.444-.417c-.3 0-.216.342-.36.342s.135.24.259.24.545-.165.545-.165z"
+          clipRule="evenodd"
         ></path>
       </g>
-      <defs>
-        <filter
-          id="filter0_d"
-          width="22"
-          height="18"
-          x="0"
-          y="0"
-          colorInterpolationFilters="sRGB"
-          filterUnits="userSpaceOnUse"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
-          <feColorMatrix
-            in="SourceAlpha"
-            result="hardAlpha"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          ></feColorMatrix>
-          <feOffset dy="2"></feOffset>
-          <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
-          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix>
-          <feBlend
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow"
-          ></feBlend>
-          <feBlend
-            in="SourceGraphic"
-            in2="effect1_dropShadow"
-            result="shape"
-          ></feBlend>
-        </filter>
-        <linearGradient
-          id="paint0_linear"
-          x1="11"
-          x2="11"
-          y1="1"
-          y2="13"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#fff" stopOpacity="0.7"></stop>
-          <stop offset="1" stopOpacity="0.3"></stop>
-        </linearGradient>
-      </defs>
     </svg>
   );
 }

@@ -1,8 +1,8 @@
 import { Headphones, GitHub, Twitter } from "react-feather";
+import Flag from "@/components/Flag";
 
 import Container from "@/components/Container";
 import Isotype from "@/components/Isotype";
-import Flag from "@/components/Flag";
 
 export default function Footer() {
   return (
@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="flex">
               <div className="text-gray-600 text-sm xl:text-base flex items-center space-x-2">
                 <span className="inline-block">Since 2015. Made in Mexico</span>
-                <Flag width={22} height={18} />
+                <Flag className="rounded-sm" />
               </div>
             </div>
           </div>
