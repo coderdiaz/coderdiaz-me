@@ -13,7 +13,7 @@ export default function BlogPage() {
           <h1 className="font-extrabold text-4xl md:text-5xl lg:text-7xl leading-tight mb-6 md:mb-16">Writing.</h1>
           <div className="grid md:grid-cols-2 gap-5 lg:gap-0 items-center pb-14">
             <div className="flex flex-col space-y-2 lg:space-y-4">
-              <h2 className="font-bold text-3xl lg:text-4xl">Creating my portfolio with Next.js, Sanity and Planetscale.</h2>
+              <h2 className="font-bold text-3xl lg:text-4xl leading-tight">Creating my portfolio with Next.js, Sanity and Planetscale.</h2>
               <div className="flex space-x-4 items-center text-gray-700 lg:text-lg">
                 <time dateTime="" className="inline-block">Aug 20, 2021</time>
                 <div className="w-1 h-1 rounded-full bg-gray-900" />

@@ -9,6 +9,9 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
+      spacing: {
+        144: '36rem',
+      },
       fontSize: {
         xs: '.75rem',
         sm: '.875rem',
