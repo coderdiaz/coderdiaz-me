@@ -22,7 +22,7 @@ export default function IndexPage() {
               alt="Avatar of Javier Diaz" />
           </div>
           <h1 className="font-extrabold text-4xl md:text-5xl lg:text-7xl leading-tight mb-3 md:mb-6">Hey, I'm Javier.</h1>
-          <div className="flex flex-col text-gray-800 tracking-wide space-y-1 md:space-y-3 md:mr-24 lg:mr-48 mb-4 md:mb-6">
+          <div className="flex flex-col text-gray-800 tracking-wide space-y-1 md:space-y-3 md:mr-24 lg:mr-34 mb-4 md:mb-6">
             <p className="leading-relaxed md:text-lg lg:text-xl">
               A <span className="font-medium text-rose-700">software engineer</span> that designs and teaches based in Mexico City.
             </p>
